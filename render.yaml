@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: robo-agent
+    runtime: docker
+    plan: free
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: APP_TOKEN
+        sync: false
